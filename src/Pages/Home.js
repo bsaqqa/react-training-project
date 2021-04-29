@@ -16,7 +16,6 @@ import AboutSection from "../Components/AboutSection";
 // `;
 //
 
-
 const Home = () => {
 
     return (
