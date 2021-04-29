@@ -17,36 +17,36 @@ function classNames(...classes) {
 
 export default function Navbar() {
     return (
-        <Disclosure as="nav" className="bg-white-900 z-10 fixed top-0 left-0 right-0 filter blur-lg">
+        <Disclosure as="nav" className="fixed top-0 left-0 right-0 z-10 bg-white-900 ">
             {({ open }) => (
                 <>
-                    <div className="max-w-6xl mx-auto px-2 md:px-4 lg:px-6">
+                    <div className="max-w-6xl px-2 mx-auto md:px-4 lg:px-6">
                         <div className="relative flex items-center justify-between h-16">
                             <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
                                 {/* Mobile menu button*/}
-                                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:text-secondary hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                                <Disclosure.Button className="inline-flex items-center justify-center p-2 text-gray-900 rounded-md hover:text-secondary hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                     <span className="sr-only">Open main menu</span>
                                     {open ? (
-                                        <XIcon className="block h-6 w-6" aria-hidden="true" />
+                                        <XIcon className="block w-6 h-6" aria-hidden="true" />
                                     ) : (
-                                        <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                                        <MenuIcon className="block w-6 h-6" aria-hidden="true" />
                                     )}
                                 </Disclosure.Button>
                             </div>
-                            <div className="flex-1 flex items-center justify-center md:items-stretch md:justify-start">
-                                <div className="flex-shrink-0 flex items-center">
+                            <div className="flex items-center justify-center flex-1 md:items-stretch md:justify-start">
+                                <div className="flex items-center flex-shrink-0">
                                     <img
-                                        className="block lg:hidden h-5 w-auto"
+                                        className="block w-auto h-5 lg:hidden"
                                         src="./images/logo.svg"
                                         alt="logo"
                                     />
                                     <img
-                                        className="hidden lg:block h-5 w-auto"
+                                        className="hidden w-auto h-5 lg:block"
                                         src="./images/logo.svg"
                                         alt="logo"
                                     />
                                 </div>
-                                <div className="hidden md:block mx-auto">
+                                <div className="hidden mx-auto md:block">
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => (
                                             <Link
@@ -64,13 +64,13 @@ export default function Navbar() {
                                     </div>
                                 </div>
                             </div>
-                            <div className=" flex items-center pr-2 hidden sm:block md:ml-4 lg:ml-6 sm:pr-0">
+                            <div className="flex items-center hidden pr-2 sm:block md:ml-4 lg:ml-6 sm:pr-0">
 
-                                <button className="text-primary-900 font-medium border-2 border-primary-900 px-3 lg:px-6 py-2 mr-2 lg:mr-6 text-sm rounded-full whitespace-nowrap focus:outline-none hover:bg-primary-900 hover:text-white  transition delay-300">
+                                <button className="px-3 py-2 mr-2 text-sm font-medium transition delay-300 border-2 rounded-full text-primary-900 border-primary-900 lg:px-6 lg:mr-6 whitespace-nowrap focus:outline-none hover:bg-primary-900 hover:text-white">
                                     SIGN IN
                                 </button>
 
-                                <button className="text-white font-medium border-2 border-primary-900  bg-primary-900 px-2 lg:px-4 py-2 text-sm rounded-full shadow-xl whitespace-nowrap focus:outline-none hover:bg-secondary hover:text-primary-900 hover:border-secondary transition delay-300">
+                                <button className="px-2 py-2 text-sm font-medium text-white transition delay-300 border-2 rounded-full shadow-xl border-primary-900 bg-primary-900 lg:px-4 whitespace-nowrap focus:outline-none hover:bg-secondary hover:text-primary-900 hover:border-secondary">
                                     GET FREE QUOTE
                                 </button>
 
@@ -78,7 +78,7 @@ export default function Navbar() {
                         </div>
                     </div>
 
-                    <Disclosure.Panel className="md:hidden shadow-xl pb-4">
+                    <Disclosure.Panel className="pb-4 shadow-xl md:hidden">
                         <div className="px-2 pt-2 pb-3 space-y-1">
                             {navigation.map((item) => (
                                 <Link
@@ -93,11 +93,11 @@ export default function Navbar() {
                                     {item.name}
                                 </Link>
                             ))}
-                            <div className=" flex flex-col  pr-2 sm:hidden ">
-                                <button className="text-primary-900 font-medium border-2 border-primary-900 px-3 py-2 mb-2 lg:mr-6 text-sm rounded-full whitespace-nowrap focus:outline-none hover:bg-primary-900 hover:text-white  transition delay-300">
+                            <div className="flex flex-col pr-2 sm:hidden">
+                                <button className="px-3 py-2 mb-2 text-sm font-medium transition delay-300 border-2 rounded-full text-primary-900 border-primary-900 lg:mr-6 whitespace-nowrap focus:outline-none hover:bg-primary-900 hover:text-white">
                                     SIGN IN
                                 </button>
-                                <button className="text-white font-medium border-2 border-primary-900  bg-primary-900 px-2 py-2 text-sm rounded-full  whitespace-nowrap focus:outline-none hover:bg-secondary hover:text-primary-900 hover:border-secondary transition delay-300">
+                                <button className="px-2 py-2 text-sm font-medium text-white transition delay-300 border-2 rounded-full border-primary-900 bg-primary-900 whitespace-nowrap focus:outline-none hover:bg-secondary hover:text-primary-900 hover:border-secondary">
                                     GET FREE QUOTE
                                 </button>
 
