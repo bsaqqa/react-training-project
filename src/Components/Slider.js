@@ -16,8 +16,22 @@ const Slider = ()=> {
                         </h1>
                     </div>
 
-                    <img className=" absolute h-4 left-20 bottom-80" src="images/circle2.svg" />
-                    <img className=" absolute h-10 right-20 bottom-20" src="images/line.svg" />
+                    <div className= " inline-grid grid-cols-3 gap-x-4">
+                        <img className="md:inline-flex sm:flex-col" src="images/Mask1.png"/>
+                        <img className="md:inline-flex sm:flex-col" src="images/Mask2.png"/>
+                        <img className="md:inline-flex sm:flex-col" src="images/Mask3.png"/>
+                    </div>
+
+                    <div >
+                        <span className="text-primary font-bold mr-3"> PREV </span>
+                        <button className="bg-primary border-none p-0.5 w-9 cursor-pointer " onClick="" ></button>
+                        <button className="bg-gray-300 border-none p-0.5 w-9 cursor-pointer " onClick=""></button>
+                        <span className="font-bold ml-3 text-gray-300"> NEXT </span>
+                    </div>
+
+                    <img className=" absolute h-4 left-20 bottom-40 " src="images/circle2.svg" />
+                    <img className=" absolute h-12 right-20 bottom-5" src="images/line.svg" />
+
                 </div>
             </section>
         </>
