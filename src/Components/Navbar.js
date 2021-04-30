@@ -79,6 +79,7 @@ export default function Navbar() {
                     </div>
 
                     <Disclosure.Panel className="pb-4 shadow-xl md:hidden">
+                        
                         <div className="px-2 pt-2 pb-3 space-y-1">
                             {navigation.map((item) => (
                                 <Link
