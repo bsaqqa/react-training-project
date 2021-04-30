@@ -32,4 +32,12 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  extend: {
+    inset: {
+      '-16': '-4rem',
+
+
+
+    }
+  }
 }

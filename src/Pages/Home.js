@@ -36,6 +36,47 @@ const Home = ()=>{
             </section>
 
             {/*<AboutSection/>*/}
+
+            {/*<contactSection/>*/}
+
+            <section id="contact-section" className="relative md:py-9  md:h-auto max-h-full md:max-h-screen bg-primary-900 mt-36 mb-36">
+
+                <img className=" lg:h-32 md:h-28 md:absolute left-10 hidden  md:block md:-top-16" src="/images/shape1-contact.svg" />
+
+                <div className="md:flex  sm:m-auto md:h-full max-w-6xl mx-auto px-5 md:px-4 py-20 mt-10 md:mt-0 md:py-3 lg:px-6 lg:mt-4 ">
+
+                    <div className="  md:flex-1 justify-center self-center">
+                        <div className="flex items-center text-lg mb-2">
+                            <span className="text-white mr-4">OUR GOAL</span>
+                            <img className="h-4" src="images/Zigzag.svg" />
+                        </div>
+                        <h2 className="text-2xl text-white pr-3 	font-bold mb-10">
+                            Got tons of new ideas or you just curiosity mind, and love to explore?
+
+                        </h2>
+
+                        <h6 className="text-lg text-white lg:pr-32 	font-medium mb-10">
+                            Hit the button we are ready for collabs and new projects!
+                        </h6>
+
+
+                    </div>
+                    <img className=" lg:h-8 h-4 md:absolute   right-16   md:block top-16" src="/images/shape3-contact.svg" />
+
+                    <div className=" md:flex-1 justify-center self-center ">
+                        <div className="flex flex-col items-center justify-center text-lg mb-2">
+                            <input type="text" placeholder="input"/>
+
+                        </div>
+                    </div>
+
+                </div>
+                <img className="h-16  absolute  xl:left-8 hidden  xl:block xl:bottom-20	"  src="images/Shape2-contact.svg" />
+
+            </section>
+
+
+
         </>
     );
 }
