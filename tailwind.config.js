@@ -7,7 +7,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
       fontFamily:{
-        sans: ['"Poppins"', ...defaultTheme.fontFamily.sans]
+        sans: ['"Poppins"', ...defaultTheme.fontFamily.sans],
+        opensans: ['"Open Sans"', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         ...defaultTheme.colors,
@@ -25,7 +26,8 @@ module.exports = {
           DEFAULT: "#093047",
           900: "#00546c"
         },
-        secondary: "#86C4EC"
+        secondary: "#86C4EC",
+        custom: "#86C4EC",
       }
   },
   variants: {
