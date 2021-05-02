@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
-
+import Services from "../Components/servises";
 import Button from '../Components/Button'
 // const Button = styled.button`
 //   @apply text-white font-medium border-2 border-primary-900 bg-primary-900 px-6 lg:px-8 py-2
@@ -36,6 +36,7 @@ const Home = ()=>{
             </section>
 
             {/*<AboutSection/>*/}
+            <Services />
         </>
     );
 }
