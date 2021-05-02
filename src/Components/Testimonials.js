@@ -45,7 +45,7 @@ const Testimonials = () => {
         <>
             <section className=" h-screen text-center mt-12">
             <div className="md:h-screen max-w-6xl mx-auto px-5 md:px-4 py-20 mt-10 md:mt-0 md:py-2 lg:px-6">
-
+            {/* @todo fix responsive design  */}
             <div className="font-bold text-3xl font-sans">
                     Here's what some of our partners are saying
                 </div>
