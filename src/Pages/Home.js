@@ -1,7 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
 import Button from '../Components/Button';
-import AboutSection from '../Components/AboutSection';
 import Slider from '../Components/Slider';
 // const Button = styled.button`
 //   @apply text-white font-medium border-2 border-primary-900 bg-primary-900 px-6 lg:px-8 py-2
@@ -32,7 +31,7 @@ const Home = ()=>{
                      src={require('../assets/images/Hero-image.jpg').default}/>
             </section>
 
-            <AboutSection/>
+            {/* <AboutSection/> */}
 
             <Slider/>
             

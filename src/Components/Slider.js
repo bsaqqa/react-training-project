@@ -5,7 +5,6 @@ import "swiper/swiper.min.css";
 import "swiper/components/navigation/navigation.min.css";
 import SwiperCore, { Navigation } from "swiper/core";
 SwiperCore.use([Navigation]);
-
 const Slider = () => {
   return (
     <>
@@ -23,39 +22,39 @@ const Slider = () => {
               for our clients
             </h1>
           </div>
-
-          <Swiper navigation={true} className="mySwiper">
-            <SwiperSlide className="flex">
-
-              <div className="rounded-xl shadow-lg">
-                <img className="md:inline-flex sm:flex-col" src="images/Mask1.png"/>
-                <span className="onHover">
-                  <b>Web site development</b>
-                  <Link>
+​
+          <Swiper navigation={true} className="mySwiper w-full h-full">
+            <SwiperSlide className="flex text-center bg-white text-lg justify-start items-center">
+​
+              <div className="rounded-xl shadow-lg cursor-pointer block relative flex-grow-0 flex-shrink-0 mr-6 h-auto object-cover overflow-hidden">
+                <img className="md:inline-flex sm:flex-col w-full" src="images/Mask1.png"/>
+                <span className="onHover flex absolute left-0 bottom-0 w-full z-0 duration-300 ease-linear">
+                  <b className="bg-white text-xl px-1 py-3 flex-grow-0 flex-shrink-0">Web site development</b>
+                  <Link className="flex-grow-0 flex-shrink-0 text-center py-3.5 px-1 inline-block align-middle text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="#FFF" viewBox="0 0 24 24" stroke="currentColor">
                       <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </Link>
                 </span>
               </div>
-
-              <div className="rounded-xl shadow-lg">
-                <img className="md:inline-flex sm:flex-col" src="images/Mask2.png" />
-                <span className="onHover">
-                  <b>Web site development</b>
-                  <Link >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="#FFF" viewBox="0 0 24 24" stroke="currentColor">
+​
+              <div className="rounded-xl shadow-lg cursor-pointer block relative flex-grow-0 flex-shrink-0 mr-6 h-auto object-cover overflow-hidden">
+                <img className="md:inline-flex sm:flex-col w-full" src="images/Mask2.png" />
+                <span className="onHover flex absolute left-0 bottom-0 w-full z-0 duration-300 ease-linear">
+                  <b className="bg-white text-xl px-1 py-3 flex-grow-0 flex-shrink-0">Web site development</b>
+                  <Link className="flex-grow-0 flex-shrink-0 text-center py-3.5 px-1 inline-block align-middle text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="#FFF" viewBox="0 0 24 24" stroke="currentColor">
                       <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </Link>
                 </span>
               </div>
-
-              <div className="rounded-xl shadow-lg">
-                <img className="md:inline-flex sm:flex-col" src="images/Mask3.png" />
-                <span className="onHover">
-                  <b>Web site development</b>
-                  <Link >
+​
+              <div className="rounded-xl shadow-lg cursor-pointer block relative flex-grow-0 flex-shrink-0 mr-6 h-auto object-cover overflow-hidden">
+                <img className="md:inline-flex sm:flex-col w-full" src="images/Mask3.png" />
+                <span className="onHover flex absolute left-0 bottom-0 w-full z-0 duration-300 ease-linear">
+                  <b className="bg-white text-xl px-1 py-3 flex-grow-0 flex-shrink-0">Web site development</b>
+                  <Link  className="flex-grow-0 flex-shrink-0 text-center py-3.5 px-1 inline-block align-middle text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="#FFF" viewBox="0 0 24 24" stroke="currentColor">
                       <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
@@ -64,37 +63,37 @@ const Slider = () => {
               </div>
           
             </SwiperSlide>
-
-            <SwiperSlide className="flex">
-              <div className="rounded-xl shadow-lg">
-                <img className="md:inline-flex sm:flex-col"src="images/Mask1.png"/>
-                <span className="onHover">
-                  <b>Web site development</b>
-                  <Link >
+​
+            <SwiperSlide className="flex text-center bg-white text-lg justify-start items-center">
+              <div className="rounded-xl shadow-lg cursor-pointer block relative flex-grow-0 flex-shrink-0 mr-6 h-auto object-cover overflow-hidden">
+                <img className="md:inline-flex sm:flex-col w-full"src="images/Mask1.png"/>
+                <span className="onHover flex absolute left-0 bottom-0 w-full z-0 duration-300 ease-linear">
+                  <b className="bg-white text-xl px-1 py-3 flex-grow-0 flex-shrink-0">Web site development</b>
+                  <Link  className="flex-grow-0 flex-shrink-0 text-center py-3.5 px-1 inline-block align-middle text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="#FFF" viewBox="0 0 24 24" stroke="currentColor">
                       <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </Link>
                 </span>
               </div>
-
-              <div className="rounded-xl shadow-lg">
-                <img className="md:inline-flex sm:flex-col" src="images/Mask2.png"/>
-                <span className="onHover">
-                  <b>Web site development</b>
-                  <Link >
+​
+              <div className="rounded-xl shadow-lg cursor-pointer block relative flex-grow-0 flex-shrink-0 mr-6 h-auto object-cover overflow-hidden">
+                <img className="md:inline-flex sm:flex-col w-full" src="images/Mask2.png"/>
+                <span className="onHover flex absolute left-0 bottom-0 w-full z-0 duration-300 ease-linear">
+                  <b className="bg-white text-xl px-1 py-3 flex-grow-0 flex-shrink-0">Web site development</b>
+                  <Link  className="flex-grow-0 flex-shrink-0 text-center py-3.5 px-1 inline-block align-middle text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="#FFF" viewBox="0 0 24 24" stroke="currentColor">
                       <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </Link>
                 </span>
               </div>
-
-              <div className="rounded-xl shadow-lg">
-                <img className="md:inline-flex sm:flex-col" src="images/Mask3.png" />
-                <span className="onHover">
-                  <b>Web site development</b>
-                  <Link >
+​
+              <div className="rounded-xl shadow-lg cursor-pointer block relative flex-grow-0 flex-shrink-0 mr-6 h-auto object-cover overflow-hidden mr-0">
+                <img className="md:inline-flex sm:flex-col w-full" src="images/Mask3.png" />
+                <span className="onHover flex absolute left-0 bottom-0 w-full z-0 duration-300 ease-linear">
+                  <b className="bg-white text-xl px-1 py-3 flex-grow-0 flex-shrink-0">Web site development</b>
+                  <Link className="flex-grow-0 flex-shrink-0 text-center py-3.5 px-1 inline-block align-middle text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="#FFF" viewBox="0 0 24 24" stroke="currentColor">
                       <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
@@ -102,9 +101,8 @@ const Slider = () => {
                 </span>
               </div>
             </SwiperSlide>
-            
           </Swiper>
-
+​
           {/*  Without Swiper library 
           <div >
               <span className="text-primary font-bold mr-3"> PREV </span>
@@ -112,7 +110,7 @@ const Slider = () => {
               <button className="bg-gray-300 border-none p-0.5 w-9 cursor-pointer " onClick=""></button>
               <span className="font-bold ml-3 text-gray-300 "> NEXT </span>
           </div> */}
-
+​
           <img
             className=" absolute h-4 left-20 bottom-40 "
             src="images/circle2.svg"
@@ -126,5 +124,4 @@ const Slider = () => {
     </>
   );
 };
-
 export default Slider;
