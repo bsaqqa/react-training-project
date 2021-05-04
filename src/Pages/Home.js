@@ -2,6 +2,7 @@ import React from "react";
 import styled from 'styled-components'
 
 import Button from '../Components/Button'
+import Testimonials from "../Components/Testimonials";
 // const Button = styled.button`
 //   @apply text-white font-medium border-2 border-primary-900 bg-primary-900 px-6 lg:px-8 py-2
 // `;
@@ -34,6 +35,8 @@ const Home = ()=>{
                 <img className="md:absolute right-0 top-0 bottom-0 max-h-auto md:max-h-screen w-full px-5 md:px-0 md:w-1/2 object-cover  z-[-1] z--1"
                      src={require('../assets/images/Hero-image.jpg').default}/>
             </section>
+            <Testimonials />
+
 
             {/*<AboutSection/>*/}
         </>
