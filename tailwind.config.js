@@ -1,34 +1,34 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   purge: [],
   // mode: 'jit',
   darkMode: false, // or 'media' or 'class'
   theme: {
-      fontFamily:{
-        sans: ['"Poppins"', ...defaultTheme.fontFamily.sans],
-        opensans: ['"Open Sans"', ...defaultTheme.fontFamily.sans],
+    fontFamily: {
+      sans: ['"Poppins"', ...defaultTheme.fontFamily.sans],
+      opensans: ['"Open Sans"', ...defaultTheme.fontFamily.sans],
+    },
+    colors: {
+      ...defaultTheme.colors,
+      black: {
+        DEFAULT: "#000",
+        300: "#333",
       },
-      colors: {
-        ...defaultTheme.colors,
-        black:{
-          DEFAULT: '#000',
-          300: "#333"
-        },
-        white: {
-          DEFAULT: defaultTheme.colors.white,
-          100: "#ffffff1A",
-          500: "#ffffff80",
-          900: "#ffffffE6"
-        },
-        primary: {
-          DEFAULT: "#093047",
-          900: "#00546c"
-        },
-        secondary: "#86C4EC",
-        custom: "#86C4EC",
-      }
+      white: {
+        DEFAULT: defaultTheme.colors.white,
+        100: "#ffffff1A",
+        500: "#ffffff80",
+        900: "#ffffffE6",
+      },
+      primary: {
+        DEFAULT: "#093047",
+        900: "#00546c",
+      },
+      secondary: "#86C4EC",
+      custom: "#86C4EC",
+      h6color: "#6B6B6B",
+    },
   },
   variants: {
     extend: {},
@@ -36,10 +36,7 @@ module.exports = {
   plugins: [],
   extend: {
     inset: {
-      '-16': '-4rem',
-
-
-
-    }
-  }
-}
+      "-16": "-4rem",
+    },
+  },
+};
