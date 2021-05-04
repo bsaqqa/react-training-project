@@ -17,7 +17,7 @@ const Home = ()=>{
                 <div className="flex md:h-screen max-w-6xl mx-auto px-5 md:px-4 py-20 mt-10 md:mt-0 md:py-2 lg:px-6">
 
                     <div className="md:flex-1 justify-center self-center">
-                        <div className="flex items-center text-lg mb-2">
+                        <div className="flex -center text-lg mb-2">
                             <span className="text-gray-300 mr-4">OUR GOAL</span>
                             <img className="h-4" src="images/Zigzag.svg" />
                         </div>
