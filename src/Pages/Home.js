@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
+import Footer from '../Components/Footer'
 
 import Button from '../Components/Button'
 // const Button = styled.button`
@@ -35,7 +36,7 @@ const Home = ()=>{
                      src={require('../assets/images/Hero-image.jpg').default}/>
             </section>
 
-            {/*<AboutSection/>*/}
+            <Footer/>
         </>
     );
 }
