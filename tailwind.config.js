@@ -26,6 +26,7 @@ module.exports = {
       },
       secondary: "#86C4EC",
       search: "#11546C",
+        custom: "#86C4EC",
     },
     // extend: {
     //   backgroundImage: (theme) => ({
@@ -37,4 +38,12 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-};
+  extend: {
+    inset: {
+      '-16': '-4rem',
+
+
+
+    }
+  }
+}
