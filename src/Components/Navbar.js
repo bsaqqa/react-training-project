@@ -70,7 +70,7 @@ export default function Navbar() {
                             <div className="flex items-center hidden pr-2 sm:block md:ml-4 lg:ml-6 sm:pr-0">
 
                                 <button className="px-3 py-2 mr-2 text-sm font-medium transition delay-300 border-2 rounded-full text-primary-900 border-primary-900 lg:px-6 lg:mr-6 whitespace-nowrap focus:outline-none hover:bg-primary-900 hover:text-white">
-                                    SIGN IN
+                                    <Link to="/login" > SIGN IN </Link>
                                 </button>
 
                                 <button className="px-2 py-2 text-sm font-medium text-white transition delay-300 border-2 rounded-full shadow-xl border-primary-900 bg-primary-900 lg:px-4 whitespace-nowrap focus:outline-none hover:bg-secondary hover:text-primary-900 hover:border-secondary">

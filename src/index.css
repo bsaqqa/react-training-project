@@ -9,3 +9,39 @@ img {
 .z--1 {
     z-index: -1
 }
+
+/*Style used for Login page.*/
+@import '~antd/dist/antd.css';
+.container{
+    width: 67%;
+    margin: 100px auto 0
+}
+.submit{
+    width:100%;
+    height:46px;
+    box-shadow: 0 10px 20px #CCDADF;
+    border-radius: 12px;
+    background-color: #00546C;
+    color: #fff;
+    font-size: 20px;
+}
+.formInput{
+    width:100%;
+    height:46px;
+    box-shadow: 0 20px 40px #EEEEEE;
+    border: none
+}
+p{
+    font-size: 18px;
+}
+p span {
+    display: block;
+}
+​
+@media only screen and (max-width: 540px){
+    .container{
+        width: 85%;
+        margin: 100px auto 0
+    }
+}  
+ /*End of style for login page.*/
