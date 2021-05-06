@@ -28,7 +28,7 @@ export default function AboutSection() {
             sem. Nisl condimentum id venenatis a condimentum vitae sapien
             pellentesque habitant.
           </div>
-          <div className="text-sm">
+          <div className="text-sm ">
             Diam ut venenatis tellus in metus vulputate eu. Neque volutpat ac
             tincidunt vitae semper quis lectus nulla. Egestas diam in arcu
             cursus. Velit ut tortor pretium viverra suspendisse potenti nullam
