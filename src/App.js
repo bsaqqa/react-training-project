@@ -6,18 +6,23 @@ import {
 } from "react-router-dom";
 
 import Routes from './router';
-import Navbar from './Components/Navbar';
+import WebLayoutRoute from './Layouts/WebLayout';
+import EmptyLayoutRoute from "./Layouts/EmptyLayout";
+import Login from "./Pages/Login";
+import DashboardIndex from "./Pages/Dashboard/Index";
+import DashboardLayoutRoute from "./Layouts/DashboardLayout";
 
 function App() {
   return (
     <Router>
         <div>
-            <Navbar/>
 
             <Switch>
                 {Routes.map((e,index)=>(
-                    <Route key={'page-'+index} exact path={e.link} children={e.component}/>
+                    <WebLayoutRoute  key={'page-'+index} exact path={e.link} component={e.component}/>
                 ))}
+                <EmptyLayoutRoute  key={'page-login'} exact path="/login" component={Login}/>
+                <DashboardLayoutRoute  key={'page-Dashboard'} exact path="/dashboard" component={DashboardIndex}/>
 
                 <Route key={'page-noMatch'} exact path="*" >
                     <Redirect to="/error"/>
