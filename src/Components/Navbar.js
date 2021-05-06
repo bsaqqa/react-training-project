@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 const navigation = [
     { name: 'Home', href: '/', current: true },
@@ -9,6 +9,7 @@ const navigation = [
     { name: 'Works', href: '#works', current: false },
     { name: 'Services', href: '#services', current: false },
     { name: 'Contact Us', href: 'contact-us', current: false },
+    { name: 'Dashboard', href: 'dashboard', current: false },
 ]
 
 function classNames(...classes) {
@@ -16,6 +17,8 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+    const history = useHistory();
+    
     return (
         <Disclosure as="nav" className="fixed top-0 left-0 right-0 z-10 bg-white-900 ">
             {({ open }) => (
@@ -53,7 +56,7 @@ export default function Navbar() {
                                                 key={item.name}
                                                 to={item.href}
                                                 className={classNames(
-                                                    item.current ? ' text-primary font-bold' : 'text-black-300  hover:text-secondary',
+                                                    item.href ==history.location.pathname ? 'text-primary font-bold' : 'text-black-300 hover:text-secondary',
                                                     'px-3 py-2 rounded-md text-sm font-medium whitespace-nowrap'
                                                 )}
                                                 aria-current={item.current ? 'page' : undefined}
@@ -79,6 +82,7 @@ export default function Navbar() {
                     </div>
 
                     <Disclosure.Panel className="pb-4 shadow-xl md:hidden">
+                        
                         <div className="px-2 pt-2 pb-3 space-y-1">
                             {navigation.map((item) => (
                                 <Link
@@ -107,5 +111,6 @@ export default function Navbar() {
                 </>
             )}
         </Disclosure>
+
     )
 }

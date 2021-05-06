@@ -26,9 +26,16 @@ module.exports = {
         900: "#00546c",
       },
       secondary: "#86C4EC",
+      search: "#11546C",
       custom: "#86C4EC",
       h6color: "#6B6B6B",
+
     },
+    // extend: {
+    //   backgroundImage: (theme) => ({
+    //     "hero-pattern": `url(${"process.env.PUBLIC_URL/images/research.jpg"})`,
+    //   }),
+    // },
   },
   variants: {
     extend: {},
