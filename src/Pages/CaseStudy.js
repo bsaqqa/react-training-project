@@ -89,15 +89,15 @@ const CaseStudy = () => {
   );
 };
 
-    return (
-        <>
-            <div className='container mx-auto mt-24 lg:px-20'>
-                <TextComponent />
-                <Screen />
-            </div>
-
-        </>
-    );
-}
+    // return (
+    //     <>
+    //         <div className='container mx-auto mt-24 lg:px-20'>
+    //             <TextComponent />
+    //             <Screen />
+    //         </div>
+    //
+    //     </>
+    // );
+// }
 
 export default CaseStudy;
