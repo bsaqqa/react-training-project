@@ -1,8 +1,7 @@
 import React from "react";
 import Button from "../Components/Button";
-import FormReq from "../Components/FormReq";
-import TextComponent from '../Components/textComponent'
-import Screen from '../Components/screenComponent'
+import TextComponent from "../Components/textComponent";
+import Screen from "../Components/screenComponent";
 import "./../assets/css/caseStudy.css";
 
 const CaseStudy = () => {
@@ -46,7 +45,6 @@ const CaseStudy = () => {
         </div>
       </section>
 
-
       <section id="case-study-img-section">
         <div className=" case-study-img mx-auto  max-w-screen-xl md:px-4 lg:px-7 pb-16 pt-2 ">
           <img
@@ -89,15 +87,15 @@ const CaseStudy = () => {
   );
 };
 
-    // return (
-    //     <>
-    //         <div className='container mx-auto mt-24 lg:px-20'>
-    //             <TextComponent />
-    //             <Screen />
-    //         </div>
-    //
-    //     </>
-    // );
+// return (
+//     <>
+//         <div className='container mx-auto mt-24 lg:px-20'>
+//             <TextComponent />
+//             <Screen />
+//         </div>
+//
+//     </>
+// );
 // }
 
 export default CaseStudy;
