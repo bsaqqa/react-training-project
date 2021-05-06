@@ -1,6 +1,7 @@
 import React from "react";
 import TextComponent from '../Components/textComponent'
 import Screen from '../Components/screenComponent'
+import "./../assets/css/caseStudy.css";
 
 const CaseStudy = ()=>{
 
