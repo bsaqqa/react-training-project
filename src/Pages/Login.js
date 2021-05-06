@@ -2,7 +2,9 @@ import React from 'react';
 import { Row, Col, Image, Typography, Form, Input, Button, Checkbox} from 'antd';
 import '../index.css'
 import { TwitterOutlined, FacebookOutlined, InstagramOutlined, LinkedinOutlined } from '@ant-design/icons';
-const { Title } = Typography;
+import { Link } from 'react-router-dom';
+
+const { Title, Paragraph } = Typography;
 const layout = {
   labelCol: { span: 8 },
   wrapperCol: { span: 16 },
@@ -16,13 +18,12 @@ function Login() {
     }
   return (
     <>
-      
       <Row>
       <Col span={13} xs={24} sm={24} md={24} lg={13} xl={13}>
         <div className="container">
-        <Title>Client Area login</Title>
-          <p><span>Kindly sign-in to your client account so you can</span>
-           <span>manage your projects.</span></p>
+        <Title level = {2}>Client Area login</Title>
+          <Paragraph>Kindly sign-in to your client account so you can <br/>
+                    manage your projects.</Paragraph>
           <Form
       {...layout}
       name="basic"
@@ -31,6 +32,7 @@ function Login() {
       onFinishFailed={onFinishFailed}
     >
       <Form.Item
+        style={{ marginBottom: 0 }}
         name="username"
         rules={[{ required: true, message: 'Please input your username!' }]}
       >
@@ -40,12 +42,13 @@ function Login() {
       <Form.Item
         name="password"
         rules={[{ required: true, message: 'Please input your password'}]}
+        style ={{margin : "0px"}}
       >
         <Input.Password placeholder="*****"  className="formInput"/>
       </Form.Item>
 ​
-      <Form.Item name="remember" valuePropName="checked">
-        <Checkbox>Remember me</Checkbox>
+      <Form.Item name="remember" valuePropName="checked" style ={{margin : "0px"}}>
+        <Checkbox > Keep me logged in </Checkbox>
       </Form.Item>
 ​
       <Form.Item>
@@ -54,16 +57,29 @@ function Login() {
         </Button>
       </Form.Item>
     </Form>
-    <Row style={{marginTop: '130px'}}>
-      <Col span={12}>
-      <p>All copyrights resaved {new Date().getFullYear()}</p>
+    <Row className="Footer">
+      <Col span={18}>
+      <Paragraph> All copyrights resaved {new Date().getFullYear()} </Paragraph>
       </Col>
-      <Col span={6} offset={6}>
-      <TwitterOutlined />
-      <FacebookOutlined style={{marginLeft: '10%'}}/>
-      <InstagramOutlined style={{marginLeft: '10%'}}/>
-      <LinkedinOutlined style={{marginLeft: '10%'}}/>
-        </Col>
+      <Col style={{display: 'flex'}} >
+
+        <Link style={{fontSize: '140%'}}>
+          <TwitterOutlined/>
+        </Link>
+
+        <Link style={{marginLeft: '30%', fontSize: '140%'}}>
+          <FacebookOutlined />
+        </Link>
+
+        <Link style={{marginLeft: '30%', fontSize: '140%'}}>
+          <InstagramOutlined />
+        </Link>
+
+        <Link style={{marginLeft: '30%', fontSize: '140%'}}>
+          <LinkedinOutlined />
+        </Link>
+
+      </Col>
     </Row>
   </div>
       </Col>
@@ -71,8 +87,10 @@ function Login() {
       <Image style={{height: '100vh'}}
           src="error"
           fallback="images/Login.png"
+          className="LoginImage"
         />
       </Col> 
       </Row>
     </>
-  );};export default Login;
+  );};
+export default Login;
