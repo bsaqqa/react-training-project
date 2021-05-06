@@ -24,6 +24,8 @@ module.exports = {
       primary: {
         DEFAULT: "#093047",
         900: "#00546c",
+        20:"#00546c05"
+        
       },
       secondary: "#86C4EC",
       search: "#11546C",
