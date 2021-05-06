@@ -16,13 +16,15 @@ export default function Footer() {
           </div>
           <div className="flex flex-col md:flex-row  justify-between">
             <div className="w-full">
-              Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
-              dignissim. Pharetra massa massa ultricies mi quis hendrerit. Tortor
-              at risus viverra adipiscing at in tellus. A iaculis at erat
-              pellentesque adipiscing commodo elit at. Viverra mauris in aliquam
-              sem. Nisl condimentum id venenatis a condimentum vitae sapien
-              pellentesque habitant.
-                        </div>
+              <h2 className="text-white font-bold text-2xl h-56">
+                Got tons of new ideas or you just curiosity mind, and love to explore?
+             </h2>
+
+              <h4 className="text-white text-2xl">
+                Hit the button we are ready for collabs and new projects!
+              </h4>
+
+            </div>
             <div className="w-full mt-12 md:mt-0">
               <form class="bg-primary-900  pb-8 mb-4">
                 <input className="bg-primary-900 text-white placeholder-white  text-sm appearance-none
@@ -69,6 +71,9 @@ export default function Footer() {
             </div>
           </div>
           <img className="h-6 absolute right-0 top-10" src="images/xform.svg" />
+          <img className="h-16 absolute left-0 bottom-32" src="images/verticalZigzag.svg" />
+          <img className="h-16 absolute left-4 top-shap-shadow z-10" src="images/cycleShapFormShadow.svg" />
+          <img className="h-16 absolute left-0 top-shap" src="images/cycleShapForm.svg" />
         </div>
       </section>
 
