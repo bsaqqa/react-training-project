@@ -15,6 +15,7 @@ function Footer() {
             </p>
             <ul className="flex pt-5">
               <li className="mr-7">
+
                 <a>
                   <i className="fab fa-twitter text-2xl"></i>
                 </a>
@@ -39,6 +40,7 @@ function Footer() {
           <div className="flex pt-4">
             <ul className="leading-8">
               <li>
+
                 <a>About</a>
               </li>
               <li>
@@ -50,6 +52,7 @@ function Footer() {
             </ul>
             <ul className="ml-32 leading-8">
               <li>
+
                 <a>FAQ</a>
               </li>
               <li>
@@ -61,6 +64,7 @@ function Footer() {
             </ul>
             <ul className="ml-32 leading-8">
               <li>
+
                 <a>Terms of use</a>
               </li>
               <li>
@@ -73,6 +77,7 @@ function Footer() {
           </div>
         </div>
       </section>
+
     </>
   );
 }
