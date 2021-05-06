@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['"Poppins"', ...defaultTheme.fontFamily.sans],
+      opensans: ['"Open Sans"', ...defaultTheme.fontFamily.sans],
     },
     colors: {
       ...defaultTheme.colors,
@@ -26,7 +27,9 @@ module.exports = {
       },
       secondary: "#86C4EC",
       search: "#11546C",
-        custom: "#86C4EC",
+      custom: "#86C4EC",
+      h6color: "#6B6B6B",
+
     },
     // extend: {
     //   backgroundImage: (theme) => ({
@@ -40,10 +43,7 @@ module.exports = {
   plugins: [],
   extend: {
     inset: {
-      '-16': '-4rem',
-
-
-
-    }
-  }
-}
+      "-16": "-4rem",
+    },
+  },
+};

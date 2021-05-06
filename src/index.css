@@ -32,6 +32,9 @@ input[type="date"] {
     font-family: 'Open Sans';
     font-size: 0.875rem;
     line-height: 1.25rem;
+}
+.case-study-img img{
+    max-height: 58vh;
   z-index: -1;
 }
 ​.swiper-slide div {
