@@ -2,11 +2,11 @@ import React from 'react';
 import { Route } from 'react-router-dom';  
 import Sidebar from '../Components/Dashboard/SideBar';
 
+
 const DashboardLayout = ({ children }) => (                         
     <>  
-        <Sidebar/>
-        {children}                                       
-    </>  
+        <Sidebar component={children}/>
+    </>
   );  
 
   const DashboardLayoutRoute = ({component: Component, ...rest}) => {  

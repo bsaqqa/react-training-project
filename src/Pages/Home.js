@@ -24,7 +24,7 @@ const Home = () => {
         <>
             <HeroSection/>
 
-            <AboutSection/>
+            <AboutSection id="about"/>
 
             <Slider/>
 

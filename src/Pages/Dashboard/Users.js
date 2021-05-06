@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const { Content } = Layout;
 
-class Index extends React.Component {
+class Users extends React.Component {
 
     render() {
         return (
@@ -18,10 +18,10 @@ class Index extends React.Component {
                     minHeight: 280,
                 }}
             >
-                Content
-              <Link to="/">Back to Home</Link>
+                Users
+              <Link to="/dashboard">Back to Home</Link>
             </Content>
         );
     }
 }
-export default Index;
+export default Users;

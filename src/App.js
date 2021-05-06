@@ -11,6 +11,7 @@ import EmptyLayoutRoute from "./Layouts/EmptyLayout";
 import Login from "./Pages/Login";
 import DashboardIndex from "./Pages/Dashboard/Index";
 import DashboardLayoutRoute from "./Layouts/DashboardLayout";
+import Users from "./Pages/Dashboard/Users";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
                 ))}
                 <EmptyLayoutRoute  key={'page-login'} exact path="/login" component={Login}/>
                 <DashboardLayoutRoute  key={'page-Dashboard'} exact path="/dashboard" component={DashboardIndex}/>
+                <DashboardLayoutRoute  key={'page-Dashboard-users'} exact path="/dashboard/users"
+                                       component={Users}/>
 
                 <Route key={'page-noMatch'} exact path="*" >
                     <Redirect to="/error"/>
