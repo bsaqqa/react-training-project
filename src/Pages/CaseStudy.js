@@ -16,7 +16,7 @@ const CaseStudy = () => {
         >
           <div className="col-span-2 mr-4 justify-center self-center">
             <div className="flex items-center text-lg mb-4">
-              <img className="h-2 w-16 mr-4" src="images/line.svg" />
+              <img className="h-2 w-16 mr-4" src="images/line2.svg" />
               <span className="text-primary font-light text-lg  ">
                 Featured Work
               </span>
