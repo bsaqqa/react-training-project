@@ -4,17 +4,17 @@ import { Route } from 'react-router-dom';
 
 const EmptyLayout = ({ children }) => (                         
     <>  
-        {children}                                       
-    </>  
+        {children}
+    </>
   );  
 
   const EmptyLayoutRoute = ({component: Component, ...rest}) => {  
     return (  
       <Route {...rest} render={props => (  
-        <EmptyLayout> 
-            <Component {...props} />  
-        </EmptyLayout>  
-      )} />  
+        <EmptyLayout>
+            <Component {...props} />
+        </EmptyLayout>
+      )} />
     )  
   };  
 

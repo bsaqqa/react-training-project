@@ -14,12 +14,41 @@
 }
 
 #components-layout-demo-custom-trigger .logo {
-    height: 32px;
-    margin: 16px;
-    background: rgba(255, 255, 255, 0.3);
+    height: 30px;
+    width: 100%;
+    max-width: 80px;
+    object-fit: contain;
+    margin: 16px auto;
+    padding: 0 10px ;
 }
 
 .site-layout .site-layout-background {
     background: #fff;
+}
+.ant-layout{
+    background: #fff;
+}
 
+.box {
+    display: flex;
+    align-items: center;
+}
+.contentCenter{
+    display: flex;
+    align-content: center;
+    /*justify-content: center;*/
+}
+
+.shadow{
+    box-shadow: 0 3px 6px rgba(0,0,0, 0.05);
+}
+.p-2{
+    padding: .5rem;
+}
+.chart-box{
+    width: 100%;
+    padding: 15px;
+}
+.mb-2{
+    margin-bottom: .5rem;
 }
