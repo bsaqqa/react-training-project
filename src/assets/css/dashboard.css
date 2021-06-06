@@ -1,6 +1,4 @@
 @import '~antd/dist/antd.css';
-
-
 #components-layout-demo-custom-trigger .trigger {
     padding: 0 24px;
     font-size: 18px;
@@ -19,13 +17,14 @@
     max-width: 80px;
     object-fit: contain;
     margin: 16px auto;
-    padding: 0 10px ;
+    padding: 0 10px;
 }
 
 .site-layout .site-layout-background {
     background: #fff;
 }
-.ant-layout{
+
+.ant-layout {
     background: #fff;
 }
 
@@ -33,22 +32,50 @@
     display: flex;
     align-items: center;
 }
-.contentCenter{
+
+.contentCenter {
     display: flex;
     align-content: center;
     /*justify-content: center;*/
 }
 
-.shadow{
-    box-shadow: 0 3px 6px rgba(0,0,0, 0.05);
+.shadow {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
 }
-.p-2{
+
+.p-2 {
     padding: .5rem;
 }
-.chart-box{
+
+.chart-box {
     width: 100%;
     padding: 15px;
 }
-.mb-2{
+
+.mb-2 {
     margin-bottom: .5rem;
+}
+
+.sideMenu {
+    position: fixed;
+    display: flex;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 2rem;
+    width: 80%;
+    background: white;
+    box-shadow: -12px 0 1.7rem rgb(0 0 0 / 9%);
+    flex-direction: column;
+}
+
+.ant-rounded-full {
+    border-radius: 50%;
+}
+
+.btn-close {
+    padding: 0;
+    height: 1.8rem;
+    width: 1.8rem;
 }
